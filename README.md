@@ -89,7 +89,7 @@ exp:
 
 - If you use a computer, you probably already know how to download
 - If you are using Android or you don't know how to download it on my computer, please click <a href="https://github.com/Clickedtran/FixItemUI/archive/refs/heads/Master.zip">to here</a>
-- If you are Vietnamese, download the Vietnamese version <a href="https://github.com/Clickedtran/FixItemUI/archive/refs/tags/Vietnamese.zip">in here</a>
+- If you are Vietnamese, download the Vietnamese version <a href="https://github.com/Clickedtran/FixItemUI/releases/download/Vietnamese/FixItemUI_Vie.zip">in here</a>
 
 ## Install
 >- Step 1: Click <a href="https://github.com/Clickedtran/FixItemUI/archive/refs/heads/Master.zip">here</a> to download plugin
