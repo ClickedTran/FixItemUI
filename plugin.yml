@@ -1,0 +1,17 @@
+name: FixItem
+main: ClickedTran\FixItem\FixItemUI
+version: 1.0.0
+api: 4.0.0
+author: ClickedTran
+depend:
+- EconomyAPI
+- FormAPI
+
+commands:
+ fix:
+  description: "Mở Menu Sửa Item"
+  permission: "fixitem.command"
+permissions:
+ fixitem.command:
+  description: "Permission for player use menu fix item"
+  default: true
