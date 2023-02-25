@@ -7,7 +7,7 @@
 - That is plugin for player fix item by money or exp
 <br>
 
-##Command and Permission
+## Command and Permission
 >- /fix - Open menu fix item
 >- fixitem.command
 <br>
