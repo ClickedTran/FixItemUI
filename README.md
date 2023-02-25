@@ -1,10 +1,15 @@
 ## General
-| **PLUGIN** | **API** |
-| :-----: | :-----: |
-| FixItemUI | 4.0.0 |
+| **PLUGIN** | **API** | **VERSION** |
+| :-----: | :-----: | :-----: |
+| FixItemUI | 4.0.0 | 1.0.0 |
 
 ## Feture
-- That is plugin for player fix item by money or exp
+- This is a plugin that allows players to repair items with `money` or `exp`
+- You can repair an item but don't change the `name`, `lore` or `enchantment` that it was in before
+<br>
+
+- Idea by: `PeaceVN`
+
 <br>
 
 ## Config
@@ -83,7 +88,10 @@ exp:
 ## Download
 
 - If you use a computer, you probably already know how to download
+- If you are using Android or you don't know how to download it on my computer, please click <a href="https://github.com/Clickedtran/FixItemUI/archive/refs/heads/Master.zip">to here</a>
+- If you are Vietnamese, download the Vietnamese version in <a href="https://github.com/ClickedTran/FixItemUI/releases/tag/Vietnamese">here</a>
 
-
-- If you are using Android or You don't know how to download it on my computer, please click <a href="https://github.com/Clickedtran/FixItemUI/archive/refs/heads/Master.zip">to here</a>
-
+## Install
+>- Step 1: Click <a href="https://github.com/Clickedtran/FixItemUI/archive/refs/heads/Master.zip">here</a> to download plugin
+>- Step 2: Unzip and cut files to folder `plugins/`
+>- Step 3: Restart server and play
