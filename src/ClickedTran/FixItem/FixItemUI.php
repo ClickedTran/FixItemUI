@@ -66,8 +66,9 @@ class FixItemUI extends PluginBase implements Listener{
       $eco = EconomyAPI::getInstance();
       $money = $eco->myMoney($player);
       $price_money = $config->getNested("money.price");
+      
        if($money < $price_money){
-       	$player->sendMessage($config->getNested("money.message-fail"));
+       	$player->sendMessage(str_replace(["{price}"], [$price_money], $config->getNested("money.fail")));
        } else {
            $this->fixMoney($player);   
       }
@@ -77,27 +78,30 @@ class FixItemUI extends PluginBase implements Listener{
       $config = new Config($this->getDataFolder(). "config.yml", Config::YAML);
       $exp = $player->getXpManager()->getXpLevel();
       $price_exp = $config->getNested("exp.price");
+      
+      $cash = $config->getNested("exp.percent");
+      
        if($exp < $price_exp){
-       	$player->sendMessage($config->getNested("exp.message-fail"));
+       	$player->sendMessage(str_replace(["{price}"], [$price_exp], $config->getNested("exp.fail")));
        } else {
            $this->fixExp($player);  
       }
       break;
      }
    });
-   $form->setTitle("§l§a•[ §bMenu §cSửa Chữa Item§a ]•");
-   $form->addButton("§l§a• §cThoát§a •" );
+   $form->setTitle($config->getNested("menu.title"));
+   $form->addButton($config->getNested("menu.exit"));
    
    if($money < $price_money){
-       $form->addButton("§l§a• §cFix §bMoney§a •\n§bBạn Không Đủ Tiền Để Sửa Chữa");
+       $form->addButton($config->getNested("money.button-not-enough"));
    }else{
-   	$form->addButton("§l§a• §cFix §bMoney§a •");
+   	$form->addButton($config->getNested("money.button-enough"));
    }
    
    if($exp < $price_exp){
-        $form->addButton("§l§a• §cFix §bExp§a •\n§bBạn Không Đủ Tiền Để Sửa Chữa");
+        $form->addButton($config->getNested("exp.button-not-enough"));
    }else{
-   	 $form->addButton("§l§a• §cFix §bExp§a •");
+   	 $form->addButton($config->getNested("exp.button-enough"));
    }
    
    $form->sendToPlayer($player);
@@ -155,9 +159,9 @@ class FixItemUI extends PluginBase implements Listener{
        break;
       }
     });
-    $form->setTitle("§l§a•[ §cSửa Chữa Item§b Money§a ]•");
-    $form->addButton("§l§a• §cKhông §a•\n§bCho Tôi Quay Lại");
-    $form->addButton("§l§a• §cCó§a •");
+    $form->setTitle($config->getNested("money.title"));
+    $form->addButton($config->getNested("money.no"));
+    $form->addButton($config->getNested("money.confirm"));
     $form->sendToPlayer($player);
   }
   
@@ -211,9 +215,9 @@ class FixItemUI extends PluginBase implements Listener{
        break;
       }
     });
-    $form->setTitle("§l§a•[ §cSửa Chữa Item§b EXP§a ]•");
-    $form->addButton("§l§a• §cKhông §a•\n§bCho Tôi Quay Lại");
-    $form->addButton("§l§a• §cCó§a •");
+    $form->setTitle($config->getNested("exp.title"));
+    $form->addButton($config->getNested("exp.no"));
+    $form->addButton($config->getNested("exp.confirm"));
     $form->sendToPlayer($player);
   }
 }
