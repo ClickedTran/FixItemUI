@@ -54,7 +54,7 @@ money:
   button-enough: "§l§a• §cFix §bMoney§a •"
   confirm: "§l§a• §cConfirm §a•"
   no: "§l§a• §cNo §a•\n§bFor me back"
-  percent: 1 #Each durability percentage is equal to 3 (x3) please leave the default as 1!!
+  percent: 1 #Each durability percentage is equal to x(number) exp, please default to 1!!
   price: 1000
   successfully: "§l§aYou have repaired item §6{item_name} a for §b{price} money"
   fail: "§l§cYou do not have enough §6{price} §cto fix this item!"
@@ -64,7 +64,7 @@ exp:
   button-enough: "§l§a• §cFix §bExp§a •"
   confirm: "§l§a• §cConfirm §a•"
   no: "§l§a• §cNo §a•\n§bFor me back"
-  percent: 1 #Each durability percentage is equal to 3 (x3) please leave the default as 1!!
+  percent: 1 #Each durability percentage is equal to x(amount) exp, please default to 1!!
   price: 10
   successfully: "§l§aYou have repaired item §6{item_name} a for §b{price} exp"
   fail: "§l§cYou do not have enough §6{price} §cto fix this item!"
@@ -89,7 +89,7 @@ exp:
 
 - If you use a computer, you probably already know how to download
 - If you are using Android or you don't know how to download it on my computer, please click <a href="https://github.com/Clickedtran/FixItemUI/archive/refs/heads/Master.zip">to here</a>
-- If you are Vietnamese, download the Vietnamese version in <a href="https://github.com/ClickedTran/FixItemUI/releases/tag/Vietnamese">here</a>
+- If you are Vietnamese, download the Vietnamese version <a href="https://github.com/Clickedtran/FixItemUI/releases/download/vietnamese/FixItemUI_Vie.zip">in here</a>
 
 ## Install
 >- Step 1: Click <a href="https://github.com/Clickedtran/FixItemUI/archive/refs/heads/Master.zip">here</a> to download plugin
