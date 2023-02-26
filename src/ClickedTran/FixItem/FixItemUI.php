@@ -123,14 +123,14 @@ class FixItemUI extends PluginBase implements Listener{
       $eco = EconomyAPI::getInstance();
       $money = $eco->myMoney($player);
       $item = $player->getInventory()->getItemInHand();
-      $meta = $item->getDamage();
+      $meta = $item->getMeta();
       $cash = $meta * $config->getNested("money.percent");
           if($money >= $cash){
             $eco->reduceMoney($player, $cash);
             $item = $player->getInventory()->getItemInHand();
-				      if($item instanceof Armor or $item instanceof Tool){
+				      if(($item instanceof Armor) or ($item instanceof Tool)){
 				        $id = $item->getId();
-					      $meta = $item->getDamage();
+					      $meta = $item->getMeta();
 					      $player->getInventory()->removeItem(ItemFactory::getInstance()->get($id, $meta, 1));
 					      $newitem = ItemFactory::getInstance()->get($id, 0, 1);
 					      if($item->hasCustomName()){
@@ -179,14 +179,14 @@ class FixItemUI extends PluginBase implements Listener{
      $config = new Config($this->getDataFolder(). "config.yml", Config::YAML);
       $exp = $player->getXpManager()->getXpLevel();
       $item = $player->getInventory()->getItemInHand();
-      $meta = $item->getDamage();
+      $meta = $item->getMeta();
       $cash = $meta * $config->getNested("exp.percent");
           if($exp >= $cash){
             $player->getXpManager()->setXpLevel($exp - $cash);
             $item = $player->getInventory()->getItemInHand();
-				      if($item instanceof Armor or $item instanceof Tool){
+				      if(($item instanceof Armor) or ($item instanceof Tool)){
 				        $id = $item->getId();
-					      $meta = $item->getDamage();
+					      $meta = $item->getMeta();
 					      $player->getInventory()->removeItem(ItemFactory::getInstance()->get($id, $meta, 1));
 					      $newitem = ItemFactory::getInstance()->get($id, 0, 1);
 					      if($item->hasCustomName()){
