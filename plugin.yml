@@ -9,7 +9,7 @@ depend:
 
 commands:
  fix:
-  description: "Mở Menu Sửa Item"
+  description: "Open menu repair Item or armor"
   permission: "fixitem.command"
 permissions:
  fixitem.command:
