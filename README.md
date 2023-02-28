@@ -7,7 +7,7 @@
 - This is a plugin that allows players to repair items with `money` or `exp`
 - You can repair an item but don't change the `name`, `lore` or `enchantment` that it was in before 
 - `Parcent` in config is the amount or exp that you have to pay for each item's durability 
-- `Price` in config is the minimum amount a player can use `Fix Money` or `Fix Exp`
+- `Price` in the config is the minimum amount a player needed to be able to use  `Fix Money` or `Fix Exp`
 <br>
 
 - Idea by: `PeaceVN`
