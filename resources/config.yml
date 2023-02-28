@@ -35,7 +35,7 @@ money:
   button-enough: "§l§a• §cFix §bMoney§a •"
   confirm: "§l§a• §cConfirm §a•"
   no: "§l§a• §cNo §a•\n§bFor me back"
-  percent: 1 #Each durability percentage is equal to 3 (x3) please leave the default as 1!!
+  percent: 1
   price: 1000
   successfully: "§l§aYou have repaired item §6{item_name} a for §b{price} money"
   fail: "§l§cYou do not have enough §6{price} §cmoney to fix this item!"
@@ -45,13 +45,13 @@ exp:
   button-enough: "§l§a• §cFix §bExp§a •"
   confirm: "§l§a• §cConfirm §a•"
   no: "§l§a• §cNo §a•\n§bFor me back"
-  percent: 1 #Each durability percentage is equal to 3 (x3) please leave the default as 1!!
+  percent: 1
   price: 10
   successfully: "§l§aYou have repaired item §6{item_name} a for §b{price} exp"
   fail: "§l§cYou do not have enough §6{price} §cexp to fix this item!"
 
 #NOTE
-#Parcent is the amount or exp that you have to pay for each item's durability
+#Parcent is the amount or exp that you have to pay for each item's durability. Please set default to 1!!
 
 #Price is the minimum amount a player needed to be able to use Fix Money or Fix Exp
 #{price} = repair money
