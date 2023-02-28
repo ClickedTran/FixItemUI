@@ -3,7 +3,7 @@
 | :-----: | :-----: | :-----: |
 | FixItemUI | 4.0.0 | 1.0.0 |
 
-## Feture
+## Feature
 - This is a plugin that allows players to repair items with `money` or `exp`
 - You can repair an item but don't change the `name`, `lore` or `enchantment` that it was in before 
 - `Parcent` in config is the amount or exp that you have to pay for each item's durability 
