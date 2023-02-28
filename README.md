@@ -59,7 +59,7 @@ money:
   percent: 1 #Each durability percentage is equal to x(number) exp, please default to 1!!
   price: 1000
   successfully: "§l§aYou have repaired item §6{item_name} a for §b{price} money"
-  fail: "§l§cYou do not have enough §6{price} §cto fix this item!"
+  fail: "§l§cYou do not have enough §6{price} §cmoney to fix this item!"
 exp:
   title: "§l§a•[ §cRepair Item §bEXP§a ]•"
   button-not-enough: "§l§a• §cFix §bExp§a •\n§bYou Don't Have Enough Exp To Repair"
@@ -69,7 +69,7 @@ exp:
   percent: 1 #Each durability percentage is equal to x(amount) exp, please default to 1!!
   price: 10
   successfully: "§l§aYou have repaired item §6{item_name} a for §b{price} exp"
-  fail: "§l§cYou do not have enough §6{price} §cto fix this item!"
+  fail: "§l§cYou do not have enough §6{price} §cexp to fix this item!"
 
 #NOTE
 #{price} = repair money
